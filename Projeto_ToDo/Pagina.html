@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto ToDo</title>
+    <!--Js do projeto-->
+    <script src="js/script.js" defer></script>
+    <!--Fonte do projeto-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <!--Css do projeto-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="todo_container">
+            <header>
+                <h1>Agenda silmara manicure</h1>
+            </header>
+            <form id="todo-form">
+                <p>Adicione sua tarefa</p>
+                <div class="form-control">
+                    <input type="text" id="todo-input" placeholder="Agendar cliente">
+                    <button type="submit">
+                        <i class="fa-thin fa-plus"></i>
+                    </button>
+                </div>
+
+            </form>
+            <form id="edit-form" class="hide">
+                <p>Edite sua tarefa</p>
+                <div class="form-control">
+                    <input type="text" id="edit-input">
+                    <button type="submit">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                </div>
+                <button id="cancel-edit-btn">Cancelar</button>
+            </form>
+            <div id="toolbar">
+                <div id="search">
+                    <h4>Pesquisar</h4>
+                    <form>
+                        <input type="text" id="search-input" placeholder="Buscar">
+                        <button id="erase-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+
+                    </form>
+                </div>
+                <div id="filter">
+                    <h4>Filtrar:</h4>
+                    <select id="filter-select">
+                        <option value="all">Todos</optin>
+                        <option value="done">Feitos</optin>
+                        <option value="todo">Agendados</optin>
+                    </select>
+                </div>
+            </div>
+            <div id="todo-list">
+                <div class="todo done">
+                    <h3>Cliente agendada tal</h3>
+                    <button class="finish-todo">
+                        <i class="fas fa-check"></i>
+                    </button>
+                    <button class="edit-todo">
+                        <i class="fas fa-pen"></i>
+                    </button>
+                    <button class="remove-todo">
+                        <i class="fas fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="todo">
+                    <h3>Cliente agendada ciclano</h3>
+                    <button class="finish-todo">
+                        <i class="fas fa-check"></i>
+                    </button>
+                    <button class="edit-todo">
+                        <i class="fas fa-pen"></i>
+                    </button>
+                    <button class="remove-todo">
+                        <i class="fas fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
