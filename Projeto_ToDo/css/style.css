@@ -58,8 +58,12 @@ input,select{
 
 .todo_container header {
     text-align:center;
-    padding: 0 1rem 1rem;
+    padding: 1rem 1rem 1rem;
     border-bottom:3px solid#FCA4CC;
+}
+
+.todo_container header h1{
+    color:#f7539c;
 }
 
 /* Todo form */
@@ -122,7 +126,7 @@ input,select{
 }
 
 #filter select{
-    flex 1;
+    flex: 1;
 }
 
 /* todo list */
@@ -153,3 +157,4 @@ input,select{
     text-decoration: line-through;
     font-style: italic;
 }
+
